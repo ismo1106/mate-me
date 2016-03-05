@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}${licensePrefix}
+</#if>
+${licensePrefix}Author	: Ismo Broto
+${licensePrefix}Description	:
+<#if licenseLast??>
+${licenseLast}
+</#if>
