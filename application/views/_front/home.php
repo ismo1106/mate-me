@@ -3,7 +3,7 @@
 <div class="demo-blog__posts mdl-grid">
     <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
         <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-            <img src="<?php echo base_url(); ?>_assets/front/img/avatar.png" alt="NULL">
+            <img src="<?php echo base_url(); ?>_assets/material/img/icon-2.png" alt="NULL">
             +1,337
         </div>
         <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
