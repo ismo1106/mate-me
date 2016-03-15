@@ -9,10 +9,12 @@ class Admin extends CI_Controller{
     
     public function __construct() {
         parent::__construct();
+        
+        $this->load->library('back');
     }
     
     function index(){
-        redirect('back/admin/login');
+        redirect('back/admin/dashboard');
     }
             
     function login(){
@@ -20,7 +22,6 @@ class Admin extends CI_Controller{
     }
     
     function dashboard(){
-        $this->load->library('back');
         $this->back->display('_back/dashboard');
     }
 }

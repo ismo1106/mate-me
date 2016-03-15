@@ -12,7 +12,7 @@
             <h1>Material Me Login</h1>
             <h3>Please input your information</h3>
         </hgroup>
-        <form>
+        <form action="<?php echo site_url('back/admin/dashboard');?>">
             <div class="group">
                 <input type="text"><span class="highlight"></span><span class="bar"></span>
                 <label>Name or Email</label>
@@ -21,11 +21,11 @@
                 <input type="email"><span class="highlight"></span><span class="bar"></span>
                 <label>Password</label>
             </div>
-            <button type="button" class="button buttonBlue">Sign in
+            <button type="submit" class="button buttonBlue">Sign in
                 <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
             </button>
         </form>
-        <footer><a href="http://www.polymer-project.org/" target="_blank"><img src="<?php echo base_url();?>_assets/material/img/icon.png"></a>
+        <footer><a href="http://www.polymer-project.org/" target="_blank"><img src="<?php echo base_url();?>_assets/material/img/mme-icon.png"></a>
             <p>You Gotta Love <a href="http://www.polymer-project.org/" target="_blank">Google</a></p>
         </footer>
 

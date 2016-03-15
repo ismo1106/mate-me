@@ -7,7 +7,7 @@
             <div class="nav-wrapper">
                 <h1 class="logo-wrapper">
                     <a href="<?php echo site_url();?>" class="brand-logo darken-1">
-                        <img src="<?php echo base_url();?>_assets/material/img/eye-con.png" width="40" alt="materialize logo">
+                        <img src="<?php echo base_url();?>_assets/material/img/mme-icon-light.png" width="40" alt="materialize logo">
                     </a>
                     <span class="logo-text">Materialize</span>
                 </h1>
