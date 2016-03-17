@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href='<?php echo base_url();?>_assets/front/mprogress.min.css' />
+<link rel="stylesheet" type="text/css" href='<?php echo base_url();?>_assets/material/mprogress.min.css' />
 
 <div class="demo-blog__posts mdl-grid">
     <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
@@ -85,7 +85,7 @@
     });
 </script>
 
-<script src='<?php echo base_url();?>_assets/front/mprogress.min.js'></script>
+<script src='<?php echo base_url();?>_assets/material/mprogress.min.js'></script>
 <script>
     $(document).ready(function () {
         var  loadbar = new Mprogress({

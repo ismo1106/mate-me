@@ -115,7 +115,7 @@
                 </form>
                 <div class="comment mdl-color-text--grey-700">
                     <header class="comment__header">
-                        <img src="<?php echo base_url();?>_assets/front/img/avatar.png" class="comment__avatar">
+                        <img src="<?php echo base_url();?>_assets/material/img/avatar.png" class="comment__avatar">
                         <div class="comment__author">
                             <strong>James Splayd</strong>
                             <span>2 days ago</span>
@@ -138,7 +138,7 @@
                     <div class="comment__answers">
                         <div class="comment">
                             <header class="comment__header">
-                                <img src="<?php echo base_url();?>_assets/front/img/avatar.png" class="comment__avatar">
+                                <img src="<?php echo base_url();?>_assets/material/img/avatar.png" class="comment__avatar">
                                 <div class="comment__author">
                                     <strong>John Dufry</strong>
                                     <span>2 days ago</span>
