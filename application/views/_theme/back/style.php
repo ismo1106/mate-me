@@ -1,4 +1,4 @@
-<link rel="icon" href="<?php echo base_url(); ?>_assets/material/img/favicon.ico">
+<link rel="icon" href="<?php echo base_url(); ?>_assets/material/img/icon-light.png">
 
 <!-- CORE CSS-->    
 <link href="<?php echo base_url();?>_assets/material-back/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">

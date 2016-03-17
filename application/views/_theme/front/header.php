@@ -1,4 +1,4 @@
-<link rel="icon" href="<?php echo base_url(); ?>_assets/front/img/favicon.ico">
+<link rel="icon" href="<?php echo base_url(); ?>_assets/material/img/icon-light.png">
 
 <title><?php echo $this->config->item('title_app').' | '.$this->config->item('descript_app');?></title>
 
