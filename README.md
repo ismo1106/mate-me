@@ -14,4 +14,4 @@ You can use this CMS for personal site or resume.
 2. **APlayer** - music player
 
 ###Requirement System
-You can follow recommended system from Codeigniter 2.2
+You can follow recommended system from Codeigniter 2.2.
