@@ -61,6 +61,26 @@ class Welcome extends CI_Controller {
             echo '<p>'.$row->name.' ('.$row->message.')</p>';
         endforeach;
     }
+    
+    function grabCURL($url){
+        $data = curl_init();
+        // setting CURL
+        curl_setopt($data, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($data, CURLOPT_URL, $url);
+        // menjalankan CURL untuk membaca isi file
+        $hasil = curl_exec($data);
+        curl_close($data);
+        return $hasil;
+    }
+    function explodeX( $delimiters, $string ){
+        return explode( chr( 1 ), str_replace( $delimiters, chr( 1 ), $string ) );
+    }
+    
+    function viewGrab(){
+        $hasil = $this->grabCURL('http://www.kaskus.co.id/');
+        $pecah = $this->explodeX(array('<section class="hot-thread">', '</section>'), $hasil);
+        print_r ($pecah[1]);
+    }
 
 }
 

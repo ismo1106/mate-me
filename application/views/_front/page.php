@@ -1,5 +1,6 @@
 <!--<link rel="stylesheet" href="<?php echo base_url();?>_assets/h-js/styles/monokai-sublime.css">-->
 <link rel="stylesheet" href="<?php echo base_url();?>_assets/h-js/prism.css">
+<link rel="stylesheet" href="<?php echo base_url();?>_assets/APlayer/APlayer.min.css">
 
 <div class="demo-blog--blogpost">
     <div class="demo-back">
@@ -40,6 +41,7 @@
                 </div>
             </div>
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+                <div id="player4" class="aplayer" style="width: 100%;"></div>
                 <p>
                     Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
                 </p>
@@ -102,6 +104,7 @@
                 <p>
                     Cillum ullamco eu cupidatat excepteur Lorem minim sint quis officia irure irure sint fugiat nostrud. Pariatur Lorem irure excepteur Lorem non irure ea fugiat adipisicing esse nisi ullamco proident sint. Consectetur qui quis cillum occaecat ullamco veniam et Lorem cupidatat pariatur. Labore officia ex aliqua et occaecat velit dolor deserunt minim velit mollit irure. Cillum cupidatat enim officia non velit officia labore. Ut esse nisi voluptate et deserunt enim laborum qui magna sint sunt cillum. Id exercitation labore sint ea labore adipisicing deserunt enim commodo consectetur reprehenderit enim. Est anim nostrud quis non fugiat duis cillum. Aliquip enim officia ad commodo id.
                 </p>
+                
             </div>
             <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
                 <form>
@@ -183,6 +186,7 @@
 </div>
 
 <script src="<?php echo base_url();?>_assets/h-js/prism.js"></script>
+<script src="<?php echo base_url();?>_assets/APlayer/APlayer.min.js"></script>
 <!--<script src="<?php echo base_url();?>_assets/h-js/highlight.pack.js"></script>-->
 <script src="<?php echo base_url();?>_assets/js/jquery-1.11.0.min.js"></script>
 <script>
@@ -218,4 +222,35 @@
         } 
         return;
     }
+</script>
+
+<script>
+    var ap4 = new APlayer({
+        element: document.getElementById('player4'),
+        narrow: false,
+        autoplay: false,
+        showlrc: false,
+        theme: '#ad7a86',
+        music: [
+            {
+                title: 'Kalimba',
+                author: 'Mr. Scruff',
+                url: 'http://192.168.12.127:88/MaterialMe/_assets/uploaded/sound/Kalimba.mp3',
+                pic: 'http://192.168.12.127:88/MaterialMe/_assets/uploaded/image/dist1.png'
+            },
+            {
+                title: 'Maid with the Flaxen Hair',
+                author: 'Richard Stoltzman, Slovak Radio Symphony Orchestra',
+                url: 'http://192.168.12.127:88/MaterialMe/_assets/uploaded/sound/Maid_with_the_Flaxen_Hair.mp3',
+                pic: 'http://192.168.12.127:88/MaterialMe/_assets/uploaded/image/dist1.png'
+            },
+            {
+                title: 'Sleep Away',
+                author: 'Bob Acri',
+                url: 'http://192.168.12.127:88/MaterialMe/_assets/uploaded/sound/Sleep_Away.mp3',
+                pic: 'http://192.168.12.127:88/MaterialMe/_assets/uploaded/image/dist1.png'
+            }
+        ]
+    });
+    ap4.init();
 </script>
