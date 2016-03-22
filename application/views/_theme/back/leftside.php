@@ -25,7 +25,7 @@
                 </div>
             </div>
         </li>
-        <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+        <li class="bold"><a href="<?php echo base_url('back/admin/dashboard');?>" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
         </li>
         <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
         </li>
