@@ -68,5 +68,7 @@ class Utility extends CI_Controller{
         foreach ($asa as $list):
             echo $list.'<br/>';
         endforeach;
+        
+        echo 'Testttttttttttttt';
     }
 }
