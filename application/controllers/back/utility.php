@@ -18,7 +18,9 @@ class Utility extends CI_Controller{
     function MenuBack(){
         $data   = array(
             '_mdiList'  => mdi_list(),
-            '_getMenu'  => $this->Mdl_Utility->selectSidebar()->result()
+            '_getMenu'  => $this->Mdl_Utility->selectSidebar()->result(),
+            '_getMenu1' => $this->Mdl_Utility->getSidebarByLevel(1)->result(),
+            '_getMenu2' => $this->Mdl_Utility->getSidebarByLevel(2)->result()
         );
         $this->back->display('_back/utility/sidebar/index',$data);
     }
@@ -30,6 +32,7 @@ class Utility extends CI_Controller{
         }
         $data   = array(
             'label_menu'    => $this->input->post('txtLabel'),
+            'serial_number' => $this->input->post('txtSerialNum'),
             'icon_menu'     => $this->input->post('selIcon'),
             'link_menu'     => $link,
             'level_menu'    => $this->getLevel($this->input->post('selHeader')),
@@ -51,6 +54,10 @@ class Utility extends CI_Controller{
 
             return (int)$row->level_menu + 1;
         }
+    }
+    
+    function viewerPDF(){
+        $this->back->display('_back/utility/test');
     }
             
     function test(){

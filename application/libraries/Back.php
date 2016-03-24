@@ -13,6 +13,10 @@ class Back {
     }
     
     function display($view, $data = NULL){
+        $this->_CI->load->model('Mdl_Utility');
+        $data['_getMenu1']  = $this->_CI->Mdl_Utility->getSidebarByLevel(1)->result();
+        $data['_getMenu2']  = $this->_CI->Mdl_Utility->getSidebarByLevel(2)->result();
+        
         $data['_style']     = $this->_CI->load->view('_theme/back/style',$data,true);
         $data['_header']    = $this->_CI->load->view('_theme/back/header',$data,true);
         $data['_left']      = $this->_CI->load->view('_theme/back/leftside',$data,true);

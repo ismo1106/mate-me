@@ -11,9 +11,14 @@
                     <div class="row">
                         <form class="col s12" method="POST" action="<?php echo site_url('back/utility/insertMenuBack');?>">
                             <div class="row">
-                                <div class="input-field col s12">
+                                <div class="input-field col s8">
                                     <input id="label" type="text" name="txtLabel" length="45"/>
                                     <label for="label">Label</label>
+                                </div>
+                                
+                                <div class="input-field col s4">
+                                    <input id="serial" type="text" name="txtSerialNum" />
+                                    <label for="serial">Serial</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -64,42 +69,42 @@
                 <div class="card-panel">
                     <h4 class="header2">Form with placeholder</h4>
                     <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input placeholder="John Doe" id="name2" type="text">
-                                    <label for="first_name">Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input placeholder="john@domainname.com" id="email2" type="email">
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input placeholder="YourPassword" id="password2" type="password">
-                                    <label for="password">Password</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea placeholder="Oh WoW! Let me check this one too." id="message2" class="materialize-textarea"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
-                                            <i class="mdi-content-send right"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        <div class="col s12">
+                            <table class="hoverable striped" style="height: 10px; overflow-y: scroll;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 15px;">Icon</th>
+                                        <th style="width: 50%;">Label</th>
+                                        <th class="center-align">Serial Number</th>
+                                        <th class="center-align">Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($_getMenu1 as $row1): ?>
+                                    <tr>
+                                        <td><i class="<?php echo $row1->icon_menu;?>"></i></td>
+                                        <td><?php echo $row1->label_menu;?></td>
+                                        <td class="center-align"><?php echo $row1->serial_number;?></td>
+                                        <td class="center-align"><?php echo $row1->level_menu;?></td>
+                                    </tr>
+                                        <?php foreach ($_getMenu2 as $row2): ?>
+                                            <?php if($row2->header_menu == $row1->id_menu): ?>
+                                            <tr style="font-size: smaller;">
+                                                <td><i class="<?php echo $row2->icon_menu;?>"></i></td>
+                                                <td><?php echo $row2->label_menu;?></td>
+                                                <td class="center-align"><?php echo $row2->serial_number;?></td>
+                                                <td class="center-align"><?php echo $row2->level_menu;?></td>
+                                            </tr>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </div>

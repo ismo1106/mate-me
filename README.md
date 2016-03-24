@@ -15,3 +15,5 @@ You can use this CMS for personal site or resume.
 
 ###Requirement System
 You can follow recommended system from Codeigniter 2.2.
+
+![mme-icon](https://github.com/ismo1106/mate-me/blob/master/_assets/material/img/mme-icon.png?raw=true)
