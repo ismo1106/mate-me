@@ -1,4 +1,4 @@
-#Mate Me
+#Moo Me
 Personal Site(Resume+Blog)
 ##Description
 You can use this CMS for personal site or resume.
