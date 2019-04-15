@@ -1,6 +1,0 @@
-{
-  "name": "Moo-me",
-  "tagline": "personal-site, used material design",
-  "body": "#Moo Me\r\nPersonal Site(Resume+Blog)\r\n##Description\r\nYou can use this CMS for personal site or resume.\r\n\r\n##This App Use\r\n1. PHP Framework - **Codeigniter 2.2**\r\n2. HTML+CSS Framework - **MeterialDesign** by Google\r\n3. JavaScript Framework - **JQuery 1.11.0**\r\n4. Database Management System - **MySQL 5.5.40**\r\n\r\n###Add on:\r\n1. **prism** - highlight content\r\n2. **APlayer** - music player\r\n\r\n###Requirement System\r\nYou can follow recommended system from Codeigniter 2.2.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
